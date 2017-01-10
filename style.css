@@ -7,3 +7,11 @@
 .problems__item {
 
 }
+
+h1 {
+  width: 600px;
+  background-color: darkgreen;
+  color: white;
+  padding-left: 10px;
+
+}
