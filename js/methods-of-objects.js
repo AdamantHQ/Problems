@@ -22,3 +22,21 @@ let ladder = {
 ladder.up().up().down().up().down().showStep();
 
 line("#2 Sum");
+
+function sum(a) {
+  let currentSum = a;
+
+  function serve(b) {
+    currentSum += b;
+    return serve;
+  }
+
+  serve.toString = function() {
+    return currentSum;
+  };
+
+  return serve;
+
+}
+
+line("Sum(1)(2)(3) =", sum(1)(2)(3));

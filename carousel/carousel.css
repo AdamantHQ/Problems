@@ -1,0 +1,93 @@
+
+
+/*Sweets*/
+
+
+.sweets {
+  min-height: 100px;
+}
+
+.sweets__list {
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.sweets__list--opened {
+  max-height: 200px;
+  transition: max-height 0.5s ease-in;
+}
+
+
+/*Carousel*/
+
+
+.carousel__inner {
+  display: flex;
+  width: 600px;
+  align-items: center;
+  padding: 0 10px;
+  background: #eee;
+  border-radius: 15px;
+  border: 1px solid white;
+  justify-content: space-around;
+  max-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: max-height 0.5s ease-in;
+}
+
+.carousel__inner--opened {
+  max-height: 200px;
+  transition: max-height 0.5s ease-out;
+}
+
+.carousel__arrow {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgb(221, 221, 221);
+}
+
+.carousel__arrow:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.carousel__arrow--right {
+  order: 1;
+}
+
+.carousel__arrow--big {
+  font-size: 30px;
+  width: 48px;
+  height: 48px;
+}
+
+.carousel__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: left 0.25s ease-in;
+}
+
+.carousel__item {
+  height: 130px;
+}
+
+.carousel__gallery {
+  width: 390px;
+  height: 130px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}

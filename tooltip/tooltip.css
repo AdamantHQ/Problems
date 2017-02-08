@@ -1,0 +1,15 @@
+body {
+  height: 2000px;
+  width: 2000px;
+  /* подсказка должна работать независимо от прокрутки */
+}
+
+.tooltip {
+  position: absolute;
+  background: white;
+  border-radius: 3px;
+  padding: 5px;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  box-shadow:  3px 3px 3px #ddd;
+}
